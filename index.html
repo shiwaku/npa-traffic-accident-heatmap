@@ -124,7 +124,7 @@
         // add the PMTiles plugin to the maplibregl global.
         let protocol = new pmtiles.Protocol();
         maplibregl.addProtocol("pmtiles", protocol.tile);
-        let PMTILES_JIKO_URL = "https://xs489works.xsrv.jp/pmtiles-data/traffic-accident/honhyo_2019-2022_convert.pmtiles";
+        let PMTILES_JIKO_URL = "https://shi-works.com/pmtiles/traffic-accident/honhyo_2019-2022_convert.pmtiles";
         const p = new pmtiles.PMTiles(PMTILES_JIKO_URL)
         p.getMetadata().then((res) => console.log(res));
         protocol.add(p);
